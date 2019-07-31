@@ -11,6 +11,10 @@ const x: string = '';
 
 function impure (): void {}
 
+// ok cause null & undefined are subtypes of all primitives
+const x: number; // is actually undefined
+const x; // type: any; value: undefined;
+
 // when a function has an unreachable end point
 function throwError (): never {}
 ```
@@ -69,9 +73,21 @@ interface ClockInterface {
 // implementation
 class Clock implements ClockInterface {
   currentTime: Date = new Date();
-  setTime(d: Date) {
+  setTime(d: Date): void {
     this.currentTime = d;
   }
   constructor(h: number, m: number) { }
+}
+```
+
+generics
+
+```typescript
+function x<T>(arg: T): T {
+  return arg.length; // Error: T doesn't have .length
+}
+
+function x<T>(arg: T[]): T {
+  return arg.length; // ok
 }
 ```
