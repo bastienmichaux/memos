@@ -1,6 +1,8 @@
 # Memos
 
 * [Bash](./bash.md)
+* CSS:
+  * [Fonts](./css-font.md)
 * [Express](./express.md)
 * [Html](./html.md)
 * JavaScript
