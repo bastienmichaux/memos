@@ -1,6 +1,6 @@
 # html
 
-Top-most elements: charset and viewport. As early ap, Content-Security-Policy. [More](https://htmlhead.dev/).
+Top-most elements: charset, viewport, Content-Security-Policy. [More](https://htmlhead.dev/).
 
 ```html
 <!doctype html>
