@@ -1,8 +1,8 @@
 # Linux commands
 
-basics
+## basics
 
-```shell
+```bash
 # what's the current working directory?
 $ pwd
 
@@ -10,9 +10,9 @@ $ pwd
 $ whoami
 ```
 
-cd, ls
+## cd, ls
 
-```shell
+```bash
 # change working directory
 $ cd path/to
 $ cd .. # go to parent directory
@@ -27,9 +27,9 @@ $ ls -a # show hidden files
 $ ls -l # more details
 ```
 
-display file content
+## display file content
 
-```shell
+```bash
 # first few lines of the file
 $ head -n 3 myfile.txt  # first three lines of the file
 
@@ -37,9 +37,9 @@ $ head -n 3 myfile.txt  # first three lines of the file
 $ tail -n +4 myfile.txt # the last 4 lines
 ```
 
-control execution
+## control execution
 
-```shell
+```bash
 # do something only if the first command succeeds
 $ foo && bar # bar is executed only if foo succeeds
 
@@ -49,3 +49,36 @@ $ foo; bar # first execute foo, then execute bar when foo is finished
 # execute 2 commands simultaneously
 $ foo & bar # bar is executed before foo is finished
 ```
+
+## users
+
+```bash
+# change password for current user
+$ passwd
+```
+
+## clipboard
+
+in .bashrc: `alias xclip="xclip -selection c"`
+
+```bash
+$ echo test | xclip
+
+# or
+$ echo arggg | xsel -b
+# ctrl+v => arggg
+```
+
+[src](https://stackoverflow.com/questions/749544/pipe-to-from-the-clipboard-in-bash-script)
+
+## other
+
+```bash
+# exits the current shell
+$ logout
+
+# exit any shell
+$ exit
+```
+
+More: [src](https://dev.to/awwsmm/101-bash-commands-and-tips-for-beginners-to-experts-30je)
