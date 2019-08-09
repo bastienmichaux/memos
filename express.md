@@ -1,14 +1,14 @@
 # Express
 
-Setup
+### Setup
 
 ```bash
-$ mkdir mydir && cd mydir
-$ npm init -y
-$ npm i -s express
+mkdir mydir && cd mydir
+npm init -y
+npm i -s express
 ```
 
-Hello world (browser to [http://localhost:3000](http://localhost:3000))
+### Hello world http://localhost:3000
 
 ```js
 const express = require('express');

@@ -71,14 +71,4 @@ $ echo arggg | xsel -b
 
 [src](https://stackoverflow.com/questions/749544/pipe-to-from-the-clipboard-in-bash-script)
 
-## other
-
-```bash
-# exits the current shell
-$ logout
-
-# exit any shell
-$ exit
-```
-
 More: [src](https://dev.to/awwsmm/101-bash-commands-and-tips-for-beginners-to-experts-30je)

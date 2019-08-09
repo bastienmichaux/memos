@@ -3,12 +3,16 @@
 - MIME: `application/json`
 - uniform type identifier: public.json
 - top-most object is a POJO: {}
-- null is authorized
-- undefined isn't authorized
-- forbidden too: NaN, Infinity, octal & hexadecimal formats
+- `null` is authorized
+- not authorized:
+  - `undefined` isn't authorized
+  - `NaN`
+  - `Infinity`
+  - octal, hexadecimal numbers
 - strings: beware some characters must be escaped
 
-JSON Schema: validation libraries:
+## JSON Schema
+Validation libraries:
 - c: WJElement
 - Java: json-schema-validator
 - .NET: Json.NET

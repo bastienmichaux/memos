@@ -31,5 +31,5 @@ Accessibility:
 Other:
 * use closing tags for auto-closing elements if you expect the content to be used by XML software
 
-Ya know:
+Trivia:
 * all elements before `<body>` are added to a default `<head>` if none is provided
